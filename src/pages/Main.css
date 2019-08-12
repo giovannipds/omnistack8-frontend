@@ -12,3 +12,16 @@
   grid-gap: 30px;
   margin-top: 50px;
 }
+
+.main-container ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container ul li footer {
+  flex: 1;
+}
+
+.main-container ul li img {
+  max-width: 100%;
+}
