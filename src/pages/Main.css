@@ -43,3 +43,10 @@
   color: #999;
   margin-top: 5px;
 }
+
+.main-container ul li .buttons {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
