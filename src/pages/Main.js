@@ -8,9 +8,11 @@ import api from '../services/api';
 import logo from '../assets/logo.svg';
 import dislike from '../assets/dislike.svg';
 import like from '../assets/like.svg';
+import itsamatch from '../assets/itsamatch.png';
 
 export default function Main({ match }) {
   const [users, setUsers] = useState([]);
+  const [matchDev, setMatchDev] = useState(true);
 
   useEffect(() => {
     async function loadUsers() {
@@ -80,7 +82,18 @@ export default function Main({ match }) {
         </ul>
       ) : (
         <div className="empty">Acabou :(</div>
-      )}
+      ) }
+
+      { matchDev && (
+        <div className="match-container">
+          <img src={itsamatch} alt="It's a match" />
+          <img className="avatar" src="https://avatars2.githubusercontent.com/u/861751?v=4" alt="" />
+          <strong>Diego Fernandes</strong>
+          <p>Co-founder & CEO @Rocketseat</p>
+
+          <button type="button">FECHAR</button>
+        </div>
+      ) }
     </div>
   );
 }
