@@ -91,7 +91,7 @@ export default function Main({ match }) {
           <strong>Diego Fernandes</strong>
           <p>Co-founder & CEO @Rocketseat</p>
 
-          <button type="button">FECHAR</button>
+          <button type="button" onClick={() => setMatchDev(null)}>FECHAR</button>
         </div>
       ) }
     </div>
